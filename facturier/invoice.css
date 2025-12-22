@@ -170,7 +170,7 @@ div.summary::after {
 .thanks {
   text-align: right;
   color: #C83200;
-  font-size: 150%;
+  font-size: 100%;
 }
 
 div.instructions, .newlined, p.note {

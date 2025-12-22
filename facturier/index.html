@@ -103,6 +103,7 @@
           <table class="items">
             <template v-if="!Array.isArray(invoice.Items)">
               <tr>
+                <th>Référence</th>
                 <th>Description</th>
                 <th class="money">Total</th>
               </tr>
@@ -118,7 +119,8 @@
                 <th class="number">Quantité</th>
                 <th class="money">Total</th>
               </tr>
-              <tr v-for="item in invoice.Items">
+              <tr v-for="item in invoice.Items">              
+                <td>{{ item.REF }}</td>
                 <td>{{ item.Description }}</td>
                 <td class="money">{{ item.Price | currency }}</td>
                 <td class="number">{{ item.Quantity }}</td>

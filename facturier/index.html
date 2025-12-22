@@ -109,7 +109,7 @@
               </tr>
               <tr>
                 <td>{{ invoice.Items }}</td>
-                <td class="money">{{ invoice.Total | currency }}</td>
+                <td class="money">{{ invoice.Total | currency:'EUR':'symbol':'1.2-2' }}</td>
               </tr>
             </template>
             <template v-else>

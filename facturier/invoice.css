@@ -148,7 +148,7 @@ div.summary .total {
 }
 
 div.summary .title, div.summary .details {
-  text-align: right;
+  text-align: left;
 }
 
 div.summary::after {

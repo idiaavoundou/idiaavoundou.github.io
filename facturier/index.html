@@ -134,13 +134,9 @@
             <div class="part">
               <div class="title">Sous-total</div>
               <div class="details">{{ invoice.Subtotal | &euro }}</div>
-            </div>
+            </div>            
             <div class="part">
-              <div class="title">Réduction</div>
-              <div class="details">{{ invoice.Deduction | currency }}</div>
-            </div>
-            <div class="part">
-              <div class="title">Taxes</div>
+              <div class="title">Frais de port</div>
               <div class="details">{{ invoice.Taxes | currency }}</div>
             </div>
             <div class="total">

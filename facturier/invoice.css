@@ -148,7 +148,7 @@ div.summary .total {
 }
 
 div.summary .title, div.summary .details {
-  text-align: left;
+  text-align: center;
 }
 
 div.summary::after {
@@ -170,7 +170,7 @@ div.summary::after {
 .thanks {
   text-align: right;
   color: #C83200;
-  font-size: 200%;
+  font-size: 150%;
 }
 
 div.instructions, .newlined, p.note {

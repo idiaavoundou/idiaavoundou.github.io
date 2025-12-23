@@ -44,7 +44,7 @@
               </div>
               <div class="info"><span class="meta">Numéro de Facture</span> #{{ invoice.Number }}</div>
               <div class="info" v-if="invoice.Issued"><div class="meta date-tag">Date</div> {{ invoice.Issued | asDate }}</div>
-              <div class="info" v-if="invoice.Due"><div class="meta date-tag">Réglé le</div> {{ invoice.Due | asDate }}</div>
+              <div class="info" v-if="invoice.Due"><div class="meta date-tag">Réglée le</div> {{ invoice.Due | asDate }}</div>
             </div>
             
             <div class="supplier">

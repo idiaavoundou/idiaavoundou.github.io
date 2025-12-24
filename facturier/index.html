@@ -123,7 +123,7 @@
               <tr v-for="item in invoice.Items">              
                 <td>{{ item.REF }}</td>
                 <td>{{ item.Description }}</td>
-                <td class="money">{{ item.Price | currency:'EUR':'symbol':'1.2-2'}}</td>
+                <td class="money">{{ item.Price | currency:'symbol':'1.2-2'}}</td>
                 <td class="number">{{ item.Quantity }}</td>
                 <td class="money">{{ item.Total | currency:'EUR' }}</td>
               </tr>
@@ -140,7 +140,7 @@
               <div class="details">{{ invoice.Taxes | currency }}</div>
             </div>
             <div class="total">
-              <div class="title">Total</div>
+              <div class="title">Total (€)</div>
               <div class="details">{{ invoice.Total | currency }}</div>
             </div>
           </div>

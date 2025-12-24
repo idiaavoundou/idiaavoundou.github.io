@@ -125,7 +125,7 @@
                 <td>{{ item.Description }}</td>
                 <td class="money">{{ item.Price:'1.2-2'}}</td>
                 <td class="number">{{ item.Quantity }}</td>
-                <td class="money">{{ item.Total | currency }}</td>
+                <td class="money">{{ item.Total }}</td>
               </tr>
             </template>
           </table>
@@ -133,15 +133,15 @@
           <div class="summary">
             <div class="part">
               <div class="title">Sous-total</div>
-              <div class="details">{{ invoice.Subtotal | &euro }}</div>
+              <div class="details">{{ invoice.Subtotal }}</div>
             </div>            
             <div class="part">
               <div class="title">Frais de port</div>
-              <div class="details">{{ invoice.Taxes | currency }}</div>
+              <div class="details">{{ invoice.Taxes }}</div>
             </div>
             <div class="total">
               <div class="title">Total (€)</div>
-              <div class="details">{{ invoice.Total | currency }}</div>
+              <div class="details">{{ invoice.Total }}</div>
             </div>
           </div>
 
